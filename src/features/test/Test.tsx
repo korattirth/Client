@@ -335,8 +335,8 @@ const Test = () => {
                     <>
                       {req in jsonData.paths[path] ? (
                         <>
-                          <Grid container columnGap={2}>
-                            <Grid item xs={7}>
+                          <Grid container>
+                            <Grid item xs={12}>
                               <div>
                                 {displayAPIInfo(
                                   jsonData.paths[path],
@@ -349,7 +349,7 @@ const Test = () => {
                                 {displayResponse(jsonData.paths[path], req)}
                               </div>
                             </Grid>
-                            <Grid
+                            {/* <Grid
                               item
                               xs={4}
                               sx={{ backgroundColor: "#454545" }}
@@ -360,7 +360,7 @@ const Test = () => {
                               <div style={{ backgroundColor: "#000000" }}>
                                 {returnResponse(jsonData.paths[path], req)}
                               </div>
-                            </Grid>
+                            </Grid> */}
                           </Grid>
                         </>
                       ) : null}
